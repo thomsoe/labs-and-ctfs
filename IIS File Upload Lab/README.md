@@ -1,11 +1,13 @@
 # IIS Server Lab for Unsecure File Upload #
-This is a really simple lab to test for a bypass technique of File Upload on IIS Server.<br>
 
-<img src= "./images/lab.jpg" alt="description" style="border: 2px solid grey;">
+This is a really simple lab to test for a bypass technique of File Upload on IIS Server. The lab implement a file upload functionnality that save files on a folder with script execution disabled. All files are rendered in plain text.<br>
 
+<table><tr><td>
+    <img src= "./images/lab.png" />
+</td></tr></table>
 
-The lab implement a file upload functionnality that save files on a folder with script execution disabled. All files are rendered in plain text.<br>
-The bypass technique consists of uploading a web.config file that will override the configuration of the uploads folder. It will allow the execution of ASPX files, more particularly a webshell.<br><br>
+The bypass technique consists of uploading a web.config file that will override the configuration of the uploads folder. It will allow the execution of ASPX files, more particularly a webshell.<br>
+
 I create this lab to get a better understanding of IIS Server and because I didn't find a lab for this bypass.<br>
 I also note that the common webshells for this technique such as this one doesn't work on all versions of IIS Server.<br>
 This lab was created on a Windows Server 2012 with IIS Server 6.2, I will develop another lab on a more recent version.<br> 
@@ -19,6 +21,7 @@ This lab was created on a Windows Server 2012 with IIS Server 6.2, I will develo
 - Open Explorer and go to "C:\inetpub\wwwroot", create a new folder called "FileUploadLab".
 - If you use another name, be sure to change the savePath variable in upload.aspx line 6 !
 - Copy upload.aspx and web.config inside and create a new folder called "uploads".
+- Change permissions of the folder by navigating to "Properties", "Security", "Edit" and "Everyone" with "Full Control".
 - Go to Tools/IIS Manager, right click on Sites, choose "Add Website", fill "Site name", choose you folder "FileUploadLab" in "Physical path", leave the rest blank and start the website.
 - Stop the Default Web Site by opening "Sites" then "Default Web Site" and stop on the right.
 
