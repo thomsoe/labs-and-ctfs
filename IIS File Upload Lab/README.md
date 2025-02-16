@@ -9,7 +9,7 @@ This is a really simple lab to test for a bypass technique of File Upload on IIS
 The bypass technique consists of uploading a web.config file that will override the configuration of the uploads folder. It will allow the execution of ASPX files, more particularly a webshell.<br>
 
 I create this lab to get a better understanding of IIS Server and because I didn't find a lab for this bypass.<br>
-I also note that the common webshells for this technique such as this one doesn't work on all versions of IIS Server.<br>
+I also note that the common webshells for this technique such as [this one](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Upload%20Insecure%20Files/Configuration%20IIS%20web.config/web.config) doesn't work on all versions of IIS Server.<br>
 This lab was created on a Windows Server 2012 with IIS Server 6.2, I will develop another lab on a more recent version.<br> 
 
 ## Setup Windows Server ##
