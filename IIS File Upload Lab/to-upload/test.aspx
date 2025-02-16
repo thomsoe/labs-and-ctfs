@@ -1,0 +1,12 @@
+<%@ Page Language="C#" %>
+ <script type="rocketlazyloadscript" language="C#" runat="Server"> 
+ void Page_Load(object sender, EventArgs e) 
+ { 
+lblMessage.Text = "<h1>This is my ASPX page</h1>"; 
+ }
+ </script> 
+<html> 
+  <body> 
+ <asp:Label ID="lblMessage" runat="Server" />
+ <script>"use strict";function wprRemoveCPCSS(){var preload_stylesheets=document.querySelectorAll('link[data-rocket-async="style"][rel="preload"]');if(preload_stylesheets&&0<preload_stylesheets.length)for(var stylesheet_index=0;stylesheet_index<preload_stylesheets.length;stylesheet_index++){var media=preload_stylesheets[stylesheet_index].getAttribute("media")||"all";if(window.matchMedia(media).matches)return void setTimeout(wprRemoveCPCSS,200)}var elem=document.getElementById("rocket-critical-css");elem&&"remove"in elem&&elem.remove()}window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link data-minify="1" rel='stylesheet' id='wpml-blocks-css' href='https://d1ny9casiyy5u5.cloudfront.net/wp-content/cache/min/1/wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=1738537673' type='text/css' media='all' /><link rel='stylesheet' id='wpml-menu-item-0-css' href='https://d1ny9casiyy5u5.cloudfront.net/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.min.css?ver=1' type='text/css' media='all' /><link rel='stylesheet' id='fusion-core-comment-form-css' href='https://d1ny9casiyy5u5.cloudfront.net/wp-content/plugins/fusion-core/css/comment-form.min.css?ver=5.11.14' type='text/css' media='all' /><link rel='stylesheet' id='fusion-core-privacy-css' href='https://d1ny9casiyy5u5.cloudfront.net/wp-content/plugins/fusion-core/css/privacy.min.css?ver=5.11.14' type='text/css' media='all' /><link rel='stylesheet' id='avada-stylesheet-css' href='https://d1ny9casiyy5u5.cloudfront.net/wp-content/themes/Avada/assets/css/style.min.css?ver=7.11.14' type='text/css' media='all' /><link rel='stylesheet' id='wp-codemirror-css' href='https://d1ny9casiyy5u5.cloudfront.net/wp-includes/js/codemirror/codemirror.min.css?ver=5.29.1-alpha-ee20357' type='text/css' media='all' /><link rel='stylesheet' id='code-editor-css' href='https://techexpert.tips/wp-admin/css/code-editor.min.css?ver=6.7.1' type='text/css' media='all' /><link rel='stylesheet' id='wp-block-library-css' href='https://d1ny9casiyy5u5.cloudfront.net/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1' type='text/css' media='all' /></noscript></body> 
+ </html>
