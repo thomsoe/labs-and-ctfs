@@ -27,6 +27,8 @@ Second flag description :
 - `cd challenge/`
 - `docker build . -t cicadya-lab`
 - `docker run -d -p 127.0.0.1:8888:80 cicadya-lab`
+  
+![Capture](./screenshot.png)
 
 ## Write-up
 The official writeup is [here](https://github.com/thomsoe/write-ups/tree/main/THCON-2025/Cicadya).
