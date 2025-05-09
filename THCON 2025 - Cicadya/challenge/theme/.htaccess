@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Empêche l'accès à index.php avec un PATH_INFO
+RewriteCond %{REQUEST_URI} ^/index\.php/ [NC]
+RewriteRule ^ - [R=404,L]
+
+# Empêche l'accès à tout fichier PHP avec un PATH_INFO
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule \.php/ - [R=404,L]
+
+# Si ce n'est ni un fichier ni un dossier existant, retourne 404
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ - [R=404,L]
+
+RewriteCond %{REQUEST_URI} ^(.{256,}).*$
+RewriteRule ^ - [R=404,L]
